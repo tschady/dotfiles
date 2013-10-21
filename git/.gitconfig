@@ -1,0 +1,49 @@
+[user]
+	name = tschady
+	email = tschady@users.noreply.github.com
+[core]
+	editor = emacs -Q
+	excludesfile = ~/.gitignore
+	autocrlf = input
+[color]
+	ui = true
+[pull]
+	rebase = true
+[alias]
+	pushall = push --recurse-submodules=on-demand
+	pullall = "!git pull && git submodule update --init"
+
+	# basics
+	cp = cherry-pick
+	st = status -sb
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch 
+	diff = diff --word-diff
+	dc = diff --cached
+
+	# screw that, start over
+	wipe = reset --hard HEAD
+	# undo last
+	undo = reset --soft HEAD^
+	# discover what I did in last 25h
+	standup = "!git log --since yesterday --author `git config user.email` --pretty=short"
+	# before pushing, cleanup commits
+	ready = rebase -i @{u}
+	# listings
+	ignored = ls-files --others -i --exclude-standard
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	le = log --oneline --decorate
+	# diffs
+	filelog = log -u
+	fl = log -u
+	dl = "!git ll -1"
+	dlc = diff --cached HEAD^
+	dr  = "!f() { git diff "$1"^.."$1"; }; f"
+	lc  = "!f() { git ll "$1"^.."$1"; }; f"
+	diffr  = "!f() { git diff "$1"^.."$1"; }; f"

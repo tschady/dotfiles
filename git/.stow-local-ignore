@@ -1,0 +1,5 @@
+# override Stow's default ignore list so we do not skip .gitignore here
+
+# emacs
+.+~
+\#.*\#

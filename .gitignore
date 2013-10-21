@@ -1,0 +1,28 @@
+### Emacs
+# general
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# org-mode
+.org-id-locations
+*_archive
+# packages
+emacs/.emacs.d/.cask
+
+# backups
+emacs/.emacs.d/backups
+# savepoints
+emacs/.emacs.d/saved-places
+
+### ZSH
+.zsh_history
+.zcompdump
+
+# oh-my-zsh
+.zsh-update
