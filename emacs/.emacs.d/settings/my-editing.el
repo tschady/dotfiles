@@ -7,9 +7,9 @@
 (setq mouse-yank-at-point t) ; paste at point, regardless of where click was
 
 ;; Tabbing
-(setq-default tab-width 4)
-(setq indent-tabs-mode nil)             ; No Tabs!
-(smart-tabs-insinuate 'c 'c++ 'java 'javascript 'cperl 'python 'ruby 'nxml)
+;(setq-default tab-width 4)
+;(setq indent-tabs-mode nil)             ; No Tabs!
+;(smart-tabs-insinuate 'c 'c++ 'java 'javascript 'cperl 'python 'ruby 'nxml)
 
 ;; Parenthesis
 (show-paren-mode t)                ; highlight matching parens
