@@ -11,8 +11,18 @@
 (setq ido-enable-flex-matching t)
 (defalias 'list-buffers 'ibuffer)		; use ibuffer instead of dired
 
+;; Rails
+(setq rinari-tags-file-name "TAGS")
+(add-hook 'ruby-mode-hook 'rinari-minor-mode)
+(add-hook 'web-mode-hook 'rinari-minor-mode)
+
 ;; Ruby
 (add-hook 'ruby-mode-hook 'yard-mode)
+(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
 
 ;; Org Mode
 ; (setq org-agenda-files (quote ("~/Dropbox/TODO/101.org")))
@@ -30,3 +40,4 @@
 ;; Web stuff
 (add-hook 'css-mode-hook 'rainbow-mode)
 (add-hook 'scss-mode-hook 'rainbow-mode)
+(add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
