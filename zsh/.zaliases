@@ -20,6 +20,9 @@ alias rd='rmdir'
 alias h='history'
 alias hh='history | less +G'
 
+### shortcuts
+alias epoch='date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s"'
+
 ### alternative versions for dvorak keyboard
 alias no=ls
 alias nn=ll
