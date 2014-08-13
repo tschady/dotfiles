@@ -11,6 +11,7 @@
 (depends-on "clojure-snippets")
 (depends-on "clojure-test-mode")
 (depends-on "closure-lint-mode")
+(depends-on "coffee-mode")
 (depends-on "ess")
 (depends-on "ess-R-data-view")
 (depends-on "ess-R-object-popup")

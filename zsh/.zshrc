@@ -82,6 +82,8 @@ source $HOME/.zaliases
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 export LESS="-R-i-P?f%f:STDIN (%i/%m) Line %lt/%L"
 
+[[ -e "$HOME/.zshrc.local" ]] && source $HOME/.zshrc.local
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # for iTerm2 compatibility
