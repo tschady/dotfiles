@@ -57,8 +57,8 @@ fpath=($HOME/.zsh/func $fpath)
 typeset -U fpath
 
 ### time output
-REPORTTIME=5
-TIMEFMT="[ time: user: %U | system: %S | cpu: %P | total: %*Es ]"
+export REPORTTIME=5
+export TIMEFMT="[ time: user: %U | system: %S | cpu: %P | total: %*Es ]"
 
 ### windowing
 #show pwd in title bar
