@@ -37,6 +37,9 @@
 ;; Line numbering
 (global-linum-mode t)					; line-numbers in fringe
 
+;; Column numbers
+(setq column-number-mode t)
+
 ;; Web stuff
 (add-hook 'css-mode-hook 'rainbow-mode)
 (add-hook 'scss-mode-hook 'rainbow-mode)
