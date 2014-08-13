@@ -10,16 +10,16 @@
 
 ;; Candidate font lists in order of preference
 (defvar my-monospace-fonts '(
-						   "Inconsolata-14:weight=normal"
-						   "Anonymous Pro-14:weight=normal"
-						   "Monaco-12:weight=normal"
-						   "Courier New-14:weight=normal"
+						   "Inconsolata-18:weight=normal"
+						   "Anonymous Pro-18:weight=normal"
+						   "Monaco-18:weight=normal"
+						   "Courier New-18:weight=normal"
 						   ))
 
 (defvar my-proportional-fonts '(
-							  "Droid Sans-14:weight=normal"
-							  "Helvetica Neue-14:weight=normal"
-							  "Helvetica-14:weight=normal"
+							  "Droid Sans-18:weight=normal"
+							  "Helvetica Neue-18:weight=normal"
+							  "Helvetica-18:weight=normal"
 							  ))
 
 ;; Default fonts
