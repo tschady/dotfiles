@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>LOGITECH</vendorname>
+    <vendorid>0x046d</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>MY_LOGITECH_WIRELESS_KEYBOARD</productname>
+    <productid>0xc52b</productid>
+  </deviceproductdef>
+
+  <item>
+    <name>Convert Dvorak -> QWERTY on other people's keyboards</name>
+    <appendix>(Dvorak to QWERTY)</appendix>
+    <appendix>(Only when using Dvorak input mode)</appendix>
+    <identifier>remap.dvorak2querty_except_my_keyboards</identifier>
+    <device_not>
+      DeviceVendor::LOGITECH, DeviceProduct::MY_LOGITECH_WIRELESS_KEYBOARD
+    </device_not>
+    <inputmodedetail_only>DVORAK</inputmodedetail_only>
+    <autogen>--KeyToKey-- KeyCode::QUOTE, KeyCode::Q
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::COMMA, KeyCode::W
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::DOT, KeyCode::E
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::P, KeyCode::R
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::Y, KeyCode::T
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::F, KeyCode::Y
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::G, KeyCode::U
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::C, KeyCode::I
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::R, KeyCode::O
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::L, KeyCode::P
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::SLASH, KeyCode::BRACKET_LEFT
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::EQUAL, KeyCode::BRACKET_RIGHT
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::O, KeyCode::S
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::E, KeyCode::D
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::U, KeyCode::F
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::I, KeyCode::G
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::D, KeyCode::H
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::H, KeyCode::J
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::T, KeyCode::K
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::N, KeyCode::L
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::S, KeyCode::SEMICOLON
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::MINUS, KeyCode::QUOTE
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::SEMICOLON, KeyCode::Z
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::Q, KeyCode::X
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::J, KeyCode::C
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::K, KeyCode::V
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::X, KeyCode::B
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::B, KeyCode::N
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::W, KeyCode::COMMA
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::V, KeyCode::DOT
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::Z, KeyCode::SLASH
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, KeyCode::MINUS
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::BRACKET_RIGHT, KeyCode::EQUAL
+</autogen>
+  </item>
+
+<!--
+  <item>
+    <name>Use Dvorak-Qwerty ⌘ under Dvorak layout on my keyboards</name>
+    <device_only>
+      DeviceVendor::APPLE_COMPUTER, DeviceProduct::APPLE_INTERNAL_KEYBOARD_TRACKPAD_0x024c,
+      DeviceVendor::APPLE_COMPUTER, DeviceProduct::APPLE_WIRELESS_KEYBOARD_0x255, DeviceLocation::TENDERLOVES_KEYBOARD,
+      DeviceVendor::APPLE_COMPUTER, DeviceProduct::APPLE_WIRELESS_KEYBOARD_0x255, DeviceLocation::DR_NICS_KEYBOARD
+    </device_only>
+    <appendix>(Command+Keys to Qwerty)</appendix>
+    <identifier>remap.dvorak2qwerty_qwertycommand_on_my_keyboards</identifier>
+    <inputmodedetail_only>DVORAK</inputmodedetail_only>
+    <modifier_only>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R
+    </modifier_only>
+    <autogen>--KeyToKey-- KeyCode::QUOTE, KeyCode::Q
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::COMMA, KeyCode::W
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::DOT, KeyCode::E
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::P, KeyCode::R
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::Y, KeyCode::T
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::F, KeyCode::Y
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::G, KeyCode::U
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::C, KeyCode::I
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::R, KeyCode::O
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::L, KeyCode::P
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::SLASH, KeyCode::BRACKET_LEFT
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::EQUAL, KeyCode::BRACKET_RIGHT
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::O, KeyCode::S
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::E, KeyCode::D
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::U, KeyCode::F
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::I, KeyCode::G
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::D, KeyCode::H
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::H, KeyCode::J
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::T, KeyCode::K
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::N, KeyCode::L
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::S, KeyCode::SEMICOLON
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::MINUS, KeyCode::QUOTE
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::SEMICOLON, KeyCode::Z
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::Q, KeyCode::X
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::J, KeyCode::C
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::K, KeyCode::V
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::X, KeyCode::B
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::B, KeyCode::N
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::W, KeyCode::COMMA
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::V, KeyCode::DOT
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::Z, KeyCode::SLASH
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, KeyCode::MINUS
+</autogen>
+    <autogen>--KeyToKey-- KeyCode::BRACKET_RIGHT, KeyCode::EQUAL
+</autogen>
+  </item>
+-->
+</root>
