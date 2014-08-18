@@ -5,9 +5,19 @@
     <vendorid>0x046d</vendorid>
   </devicevendordef>
 
+  <devicevendordef>
+    <vendorname>APPLE</vendorname>
+    <vendorid>0x05ac</vendorid>
+  </devicevendordef>
+
   <deviceproductdef>
     <productname>MY_LOGITECH_WIRELESS_KEYBOARD</productname>
     <productid>0xc52b</productid>
+  </deviceproductdef>
+
+  <deviceproductdef>
+    <productname>MY_APPLE_BT_KEYBOARD</productname>
+    <productid>0x0255</productid>
   </deviceproductdef>
 
   <item>
@@ -16,7 +26,8 @@
     <appendix>(Only when using Dvorak input mode)</appendix>
     <identifier>remap.dvorak2querty_except_my_keyboards</identifier>
     <device_not>
-      DeviceVendor::LOGITECH, DeviceProduct::MY_LOGITECH_WIRELESS_KEYBOARD
+      DeviceVendor::LOGITECH, DeviceProduct::MY_LOGITECH_WIRELESS_KEYBOARD,
+      DeviceVendor::APPLE,    DeviceProduct::MY_APPLE_BT_KEYBOARD
     </device_not>
     <inputmodedetail_only>DVORAK</inputmodedetail_only>
     <autogen>--KeyToKey-- KeyCode::QUOTE, KeyCode::Q
