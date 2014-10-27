@@ -32,7 +32,7 @@ local user="%{$DEFAULT_COLOR%}%n%{$reset_color%}"
 local host="%{$DEFAULT_COLOR%}@%m%{$reset_color%}"
 local return_code="%(?..%{$fg_bold[red]%} ☹ %?%{$reset_color%})"
 local prompt_char="%{$DEFAULT_COLOR%}%#%{$reset_color%}"
-local pwd="[%3~]"
+local pwd="[%3/]"
 local time="%*"
 
 # prompts
