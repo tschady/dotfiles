@@ -17,9 +17,6 @@
 			    (left . 172) 
 			    (top . 0)))
 
-; second editor
-(make-frame '((left . 1100)))		; a big number pushes to right edge
-
 ;; Speedbar
 (setq speedbar-directory-unshown-regexp "^$") ; override to show all dirs
 (setq speedbar-update-flag nil)		   ; do not change pwd with buffer
