@@ -26,12 +26,12 @@ ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE="%{$fg_bold[magenta]%} ↕%{$reset_color%}"
 
 # prompt vars
 local DEFAULT_COLOR=$fg[cyan]
-local marker="%{$DEFAULT_COLOR%}➜%{$reset_color%}"
+local marker="%{$DEFAULT_COLOR%}██▶%{$reset_color%}"
 # <tws> TODO: change color/emphasis if root
 local user="%{$DEFAULT_COLOR%}%n%{$reset_color%}"
 local host="%{$DEFAULT_COLOR%}@%m%{$reset_color%}"
 local return_code="%(?..%{$fg_bold[red]%} ☹ %?%{$reset_color%})"
-local prompt_char="%{$DEFAULT_COLOR%}%#%{$reset_color%}▶"
+local prompt_char="%{$DEFAULT_COLOR%}%#%{$reset_color%}"
 local pwd="[%3~]"
 local time="%*"
 
