@@ -14,6 +14,9 @@
 ;; Cofeescript
 (custom-set-variables '(coffee-tab-width 2))
 
+;; Flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
 ;; Rails
 (setq rinari-tags-file-name "TAGS")
 (add-hook 'ruby-mode-hook 'rinari-minor-mode)
