@@ -84,7 +84,7 @@ export LESS="-R-i-P?f%f:STDIN (%i/%m) Line %lt/%L"
 
 [[ -e "$HOME/.zshrc.local" ]] && source $HOME/.zshrc.local
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # for iTerm2 compatibility
 __rvm_project_rvmrc
