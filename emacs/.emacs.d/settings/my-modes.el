@@ -11,6 +11,9 @@
 (setq ido-enable-flex-matching t)
 (defalias 'list-buffers 'ibuffer)		; use ibuffer instead of dired
 
+;; Cofeescript
+(custom-set-variables '(coffee-tab-width 2))
+
 ;; Rails
 (setq rinari-tags-file-name "TAGS")
 (add-hook 'ruby-mode-hook 'rinari-minor-mode)
