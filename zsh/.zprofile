@@ -1,6 +1,6 @@
 # -*- shell-script -*-
 
-path=(~/bin /usr/local/bin ~/.cask/bin $path)
+path=(~/bin ~/.cask/bin $path)
 
 ssh-add ~/.ssh/id_rsa
 
