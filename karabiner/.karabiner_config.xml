@@ -26,7 +26,7 @@
     <appendix>(Only when using Dvorak input mode)</appendix>
     <identifier>remap.dvorak2querty_except_my_keyboards</identifier>
     <device_not>
-      DeviceVendor::LOGITECH, DeviceProduct::MY_LOGITECH_WIRELESS_KEYBOARD,
+      <!-- DeviceVendor::LOGITECH, DeviceProduct::MY_LOGITECH_WIRELESS_KEYBOARD, -->
       DeviceVendor::APPLE,    DeviceProduct::MY_APPLE_BT_KEYBOARD
     </device_not>
     <inputmodedetail_only>DVORAK</inputmodedetail_only>
