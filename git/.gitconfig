@@ -9,6 +9,10 @@
 	ui = true
 [pull]
 	rebase = true
+
+[rerere]
+	enabled = true
+
 [alias]
 	pushall = push --recurse-submodules=on-demand
 	pullall = "!git pull && git submodule update --init"
