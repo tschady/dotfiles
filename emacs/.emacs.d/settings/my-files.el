@@ -2,13 +2,13 @@
 
 ;; Backups
 (setq backup-by-copying t ; don't clobber symlinks
-      backup-directory-alist 
+      backup-directory-alist
         `(("." . ,(concat user-emacs-directory "backups"))) ; all auto-saves here
       delete-old-versions t
       kept-new-versions 6
       kept-old-versions 2
       version-control t ; use versioned backups
-      )       
+      )
 (setq auto-save-timeout 60)                    ; Autosave every minute
 
 ;; SavePlace - save and return to place of last edit in file

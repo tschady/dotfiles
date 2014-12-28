@@ -81,6 +81,11 @@ source $HOME/.zaliases
 # env vars
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 export LESS="-R-i-P?f%f:STDIN (%i/%m) Line %lt/%L"
+export PGDATA="/usr/local/var/postgres"
+
+# include local env vars, such as passwords, which we do not want in SCCS
+LOCAL_FILE=$HOME/.zshrc_local
+[[ -r $LOCAL_FILE ]] && source $LOCAL_FILE
 
 [[ -e "$HOME/.zshrc.local" ]] && source $HOME/.zshrc.local
 
@@ -88,3 +93,6 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # for iTerm2 compatibility
 __rvm_project_rvmrc
+
+PERL_MB_OPT="--install_base \"/Users/tschady/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/tschady/perl5"; export PERL_MM_OPT;

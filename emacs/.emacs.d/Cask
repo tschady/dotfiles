@@ -21,6 +21,7 @@
 (depends-on "haml-mode")
 (depends-on "magit")
 (depends-on "markdown-mode")
+(depends-on "multi-term")
 (depends-on "pallet")
 (depends-on "rainbow-mode")
 (depends-on "rinari")
