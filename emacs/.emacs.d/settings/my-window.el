@@ -17,6 +17,11 @@
 			    (left . 172) 
 			    (top . 0)))
 
+;; Navigation
+; use Shift-arrow to move between windows
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
 ;; Speedbar
 (setq speedbar-directory-unshown-regexp "^$") ; override to show all dirs
 (setq speedbar-update-flag nil)		   ; do not change pwd with buffer
