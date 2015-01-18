@@ -10,6 +10,9 @@
 [pull]
 	rebase = true
 
+[push]
+	default = simple
+
 [rebase]
 	autosquash = true
 
