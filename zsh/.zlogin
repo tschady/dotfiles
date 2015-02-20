@@ -1,5 +1,5 @@
 # -*- shell-script -*-
 
 echo ""
-fortune
+fortune computers
 echo ""
