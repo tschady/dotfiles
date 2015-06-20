@@ -26,3 +26,8 @@ emacs/.emacs.d/saved-places
 
 # oh-my-zsh
 .zsh-update
+
+# emacs configs
+## don't save web browser utils
+emacs/.emacs.d/var/
+emacs/.emacs.d/url/
