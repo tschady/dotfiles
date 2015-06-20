@@ -92,8 +92,7 @@
    ;; Font lock faces
    `(font-lock-builtin-face       ((,class (:foreground ,chill-yellow-2))))
    ; font-lock-comment-delimiter-face
-   `(font-lock-comment-face       ((,class (:foreground ,chill-green
-														:slant italic))))
+   `(font-lock-comment-face       ((,class (:foreground ,chill-green :slant italic))))
    `(font-lock-constant-face      ((,class (:foreground ,chill-blue+1))))
    ; font-lock-doc-face
    ; font-lock-doc-string-face
@@ -104,8 +103,7 @@
    `(font-lock-string-face        ((,class (:foreground ,chill-green+2))))
    `(font-lock-type-face          ((,class (:foreground ,chill-yellow-2))))
    `(font-lock-variable-name-face ((,class (:foreground ,chill-fg))))
-   `(font-lock-warning-face       ((,class (:foreground ,chill-orange
-														:weight bold))))
+   `(font-lock-warning-face       ((,class (:foreground ,chill-orange :weight bold))))
 
    ;; Highlighting faces
    `(escape-glyph ((,class (:foreground ,chill-yellow :weight bold))))
