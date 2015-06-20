@@ -21,21 +21,3 @@
 ; use Shift-arrow to move between windows
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
-
-;; Speedbar
-(setq speedbar-directory-unshown-regexp "^$") ; override to show all dirs
-(setq speedbar-update-flag nil)		   ; do not change pwd with buffer
-(setq speedbar-show-unknown-files t)   ; show all files
-(setq speedbar-frame-parameters '((minibuffer . nil)
-				  (vertical-scroll-bars . nil)
-				  (width . 18)
-				  (height . 56)			; speedbar line height bigger?
-				  (left . 41)			; just past mac dock
-				  (border-width . 0 )
-				  (menu-bar-lines . 0)
-				  (tool-bar-lines . 0)
-				  (unsplittable . t)
-				  (left-fringe . 0)
-				  (right-fringe . 0)
-				  ))
-(speedbar t)
