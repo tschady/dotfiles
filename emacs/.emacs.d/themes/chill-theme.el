@@ -163,12 +163,13 @@
 
    ;; Markup faces for modes that use markup-faces.el like AsciiDoc
    `(markup-gen-face ((,class (:foreground ,chill-blue+2))))
-   ; markup-title-0-face
-   ; markup-title-1-face
-   ; markup-title-2-face
-   ; markup-title-3-face
-   ; markup-title-4-face
-   ; markup-title-5-face
+   `(markup-title-0-face ((,class (:inherit markup-gen-face :height 1.6 :weight bold))))
+   `(markup-title-1-face ((,class (:inherit markup-gen-face :height 1.2 :weight bold))))
+   `(markup-title-2-face ((,class (:inherit markup-gen-face :height 1.1))))
+   `(markup-title-3-face ((,class (:inherit markup-gen-face :height 1.0 :slant italic))))
+   `(markup-title-4-face ((,class (:inherit markup-gen-face :height 1.0))))
+   `(markup-title-5-face ((,class (:inherit markup-gen-face :height 1.0))))
+
    ;  markup-emphasis-face
    ; markup-strong-face
    `(markup-verbatim-face ((,class (:background ,chill-red-4))))
