@@ -8,6 +8,8 @@
 auto-save-list
 tramp
 .\#*
+my-customize.el
+ido.last
 
 # org-mode
 .org-id-locations
