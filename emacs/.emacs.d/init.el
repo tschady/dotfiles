@@ -1,14 +1,13 @@
 ;;;; Emacs Customizations
 ; @author: tschady <tschady@users.noreply.github.com>
 ; @date: 6 Oct 2013
-; 
+;
 ; I recently declared .emacs bankruptcy and started over after 15 yrs of cruft
 
 (setq debug-on-error t)
 
 ;;; initialization
 ;; load paths
-(add-to-list 'load-path user-emacs-directory)
 (setq my-settings-path (concat user-emacs-directory "settings/"))
 (add-to-list 'load-path my-settings-path)
 
@@ -24,14 +23,12 @@
 
 ;;; Customizations
 ;; put Emacs' menu-driven customize details in its own file
+;; we .gitignore this file to allow experimentation with the menu driven
+;; approach, then enshrining into permanent settings once suitable
 (setq custom-file (concat my-settings-path "my-customize.el"))
 (when (file-exists-p custom-file) (load custom-file))
 
-;; personal customizations
-(when (window-system) (load "my-window"))
-(load "my-functions")
-(load "my-files")
-(load "my-modes")
-(load "my-editing")
-(load "my-keybindings")
-(load "my-styles")
+;; regular customizations
+(require 'load-dir)
+(setq load-dirs my-settings-path)
+(setq load-dir-recursive t)
