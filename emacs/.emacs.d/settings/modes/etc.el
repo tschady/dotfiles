@@ -10,9 +10,6 @@
 ;; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
-;; YASnippets
-(yas-global-mode t)						; snippets on everything!
-
 ;; Web stuff
 (add-hook 'css-mode-hook 'rainbow-mode)
 (add-hook 'scss-mode-hook 'rainbow-mode)

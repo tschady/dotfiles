@@ -1,0 +1,5 @@
+(require 'yasnippet)
+(yas-reload-all)
+(add-hook 'prog-mode-hook 'yas-minor-mode)
+;(add-hook 'ess-mode-hook 'yas-minor-mode)
+;(add-hook 'markdown-mode-hook 'yas-minor-mode)
