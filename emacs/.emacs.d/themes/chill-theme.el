@@ -24,32 +24,26 @@
       (chill-bg+2      "grey40")
 
       (chill-blue      "#7B89A7")
-	  ; (chill-blue+1    "#8A94A8")
+;      (chill-blue+1    "#8A94A8")
       (chill-blue+1    "#A3AAB8")
       (chill-blue+2    "#99B3E6")
-
       (chill-green-1   "#4A6D4A")
       (chill-green     "#73A073")
-      (chill-green+1   "#8FB28F") ; zenburn
-      (chill-green+2   "#9FC59F") ; zenburn
-      (chill-green+3   "#AFD8AF") ; zenburn
-
+      (chill-green+1   "#8FB28F")
+      (chill-green+2   "#9FC59F")
+      (chill-green+3   "#AFD8AF")
       (chill-violet    "#B081DF")
-      (chill-orange    "#DFAF8F") ; zenburn
-      (chill-yellow    "#F0DFAF") ; zenburn
-      (chill-yellow-1  "#E0CF9F") ; zenburn
-      (chill-yellow-2  "#D0BF8F") ; zenburn
-
-      (chill-red+1     "#DCA3A3") ; zenburn
-      (chill-red       "#CC9393") ; zenburn
-      (chill-red-1     "#BC8383") ; zenburn
-      (chill-red-2     "#AC7373") ; zenburn
-      (chill-red-3     "#9C6363") ; zenburn
-      (chill-red-4     "#8C5353") ; zenburn
-
-      (chill-gray    "LightSteelBlue4")
-
-      )
+      (chill-orange    "#DFAF8F")
+      (chill-yellow    "#F0DFAF")
+      (chill-yellow-1  "#E0CF9F")
+      (chill-yellow-2  "#D0BF8F")
+      (chill-red+1     "#DCA3A3")
+      (chill-red       "#CC9393")
+      (chill-red-1     "#BC8383")
+      (chill-red-2     "#AC7373")
+      (chill-red-3     "#9C6363")
+      (chill-red-4     "#8C5353")
+      (chill-gray    "LightSteelBlue4"))
 
   (custom-theme-set-faces
    'chill
@@ -57,17 +51,21 @@
 
    ;; Buttons
    `(button ((,class (:underline t))))
-   `(link ((,class (:foreground ,chill-yellow :underline t :weight bold))))
+   `(link ((,class (:foreground ,chill-yellow
+                                :underline t
+                                :weight bold))))
+
    `(link-visited ((,class (:foreground ,chill-yellow-2
-					:underline t :weight normal))))
+					:underline t
+                                        :weight normal))))
 
    ;; show-parens
-   `(show-paren-match ((,class (:foreground ,chill-bg-1 :background ,chill-fg+1
+   `(show-paren-match ((,class (:foreground ,chill-bg-1
+                                            :background ,chill-fg+1
                                             :weight bold))))
 
    ;; Window and frame
    `(cursor ((,class (:foreground ,chill-fg :background ,chill-fg+1))))
-   ; header-line
    `(fringe ((,class (:foreground ,chill-fg-2 :background ,chill-bg-1))))
    `(linum ((,class (:foreground ,chill-fg-2 :background ,chill-bg))))
    `(menu ((,class (:foreground ,chill-fg :background ,chill-bg))))
@@ -135,19 +133,19 @@
    `(flymake-errline
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,chill-red)
-                   :inherit unspecified 
+                   :inherit unspecified
 		   :foreground unspecified :background unspecified))
       (,class (:foreground ,chill-red-1 :weight bold :underline t))))
    `(flymake-warnline
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,chill-orange)
-                   :inherit unspecified 
+                   :inherit unspecified
 		   :foreground unspecified :background unspecified))
       (,class (:foreground ,chill-orange :weight bold :underline t))))
    `(flymake-infoline
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,chill-green)
-                   :inherit unspecified 
+                   :inherit unspecified
 		   :foreground unspecified :background unspecified))
       (,class (:foreground ,chill-green-1 :weight bold :underline t))))
 
@@ -270,7 +268,7 @@
 
   (custom-theme-set-variables
    'chill
-   `(ansi-color-names-vector ["black" "red" "green" "yellow" 
+   `(ansi-color-names-vector ["black" "red" "green" "yellow"
 			      "blue" "magenta" "cyan" "white"]))
 )
 (provide-theme 'chill)
