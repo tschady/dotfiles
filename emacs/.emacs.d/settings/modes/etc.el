@@ -1,4 +1,8 @@
 ;;;; custom mode settings
+
+;; Avy
+(setq avy-background t)
+
 ;; Terminal
 (setq multi-term-program "/bin/zsh")
 

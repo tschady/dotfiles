@@ -117,6 +117,13 @@
    `(secondary-selection ((,class (:background ,chill-bg+2))))
    `(trailing-whitespace ((,class (:background ,chill-red))))
 
+   ;; Avy-mode
+   `(avy-background-face ((,class (:foreground "gray40"))))
+;    `(ace-jump-face-foreground ((,class (:background "gray10"
+;                                                     :foreground "red"
+; ;                                                    :box (:line-width  :color "#333333")
+;                                                     :weight ultra-bold))))
+
    ;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
