@@ -19,6 +19,7 @@
 (depends-on "ess-R-object-popup")
 (depends-on "feature-mode")
 (depends-on "flycheck")
+(depends-on "flyspell")
 (depends-on "graphviz-dot-mode")
 (depends-on "haml-mode")
 (depends-on "magit")
