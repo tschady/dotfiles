@@ -3,6 +3,7 @@
 (source "org" "http://orgmode.org/elpa/")
 
 
+(depends-on "ac-cider")
 (depends-on "ack")
 (depends-on "adoc-mode")
 (depends-on "applescript-mode")
