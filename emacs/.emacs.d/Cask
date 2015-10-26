@@ -30,6 +30,7 @@
 (depends-on "graphviz-dot-mode")
 (depends-on "haml-mode")
 (depends-on "helm")
+(depends-on "image+")
 (depends-on "kibit-helper")
 (depends-on "load-dir")
 (depends-on "magit")
