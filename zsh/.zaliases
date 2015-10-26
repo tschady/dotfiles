@@ -6,6 +6,9 @@
 # stop zsh from interpreting rake tasks with arguments improperly
 alias rake='noglob rake'
 
+### overrides
+alias ctags="`brew --prefix`/bin/ctags"
+
 ### app aliases
 alias xemacs='open -a Emacs.app'
 
