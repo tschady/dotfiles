@@ -37,4 +37,4 @@ local time="%*"
 
 # prompts
 PROMPT='${marker} ${user}${host}$(git_prompt_info)${return_code} ${prompt_char} '
-RPS1='$(rvm_prompt_info) ${pwd} ${time}'
+RPS1='($(rbenv version-name)) ${pwd} ${time}'

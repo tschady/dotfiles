@@ -87,12 +87,14 @@ export PGDATA="/usr/local/var/postgres"
 LOCAL_FILE=$HOME/.zshrc_local
 [[ -r $LOCAL_FILE ]] && source $LOCAL_FILE
 
-[[ -e "$HOME/.zshrc.local" ]] && source $HOME/.zshrc.local
-
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# for iTerm2 compatibility
-__rvm_project_rvmrc
 
 PERL_MB_OPT="--install_base \"/Users/tschady/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/tschady/perl5"; export PERL_MM_OPT;
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
+
+export NVM_DIR=~/.nvm
+
+source $(brew --prefix nvm)/nvm.sh
+eval "$(rbenv init - zsh --no-rehash)"
