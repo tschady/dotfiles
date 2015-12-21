@@ -44,8 +44,8 @@
 	wipe = reset --hard HEAD
 	# undo last
 	undo = reset --soft HEAD^
-	# discover what I did in last 25h
-	standup = "!git log --since yesterday --author `git config user.email` --pretty=short"
+	# discover what I did in last workday
+	standup = "!git log --since=$(if [[ $(date +%u) -eq 1 ]]; then echo "3.days.ago"; else echo "yesterday"; fi) --pretty=format:'%C(yellow)%h%C(red)%d %Creset%s%C(blue) [%cn]' --author=$(git config user.email) --date=short --decorate"
 	# before pushing, cleanup commits
 	ready = rebase -i @{u}
 	# listings
