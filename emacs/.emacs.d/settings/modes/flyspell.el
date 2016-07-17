@@ -1,3 +1,8 @@
+;; since no middle-mouse button (mouse-2) on Mac Trackpad, use C-right click
+(eval-after-load "flyspell" '(progn
+  (define-key flyspell-mouse-map (kbd "<C-down-mouse-3>") #'flyspell-correct-word)
+  (define-key flyspell-mouse-map (kbd "<C-mouse-3>") 'undefined) ))
+
 ;; use aspell if installed
 (cond
  ((executable-find "aspell")
