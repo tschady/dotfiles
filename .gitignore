@@ -10,6 +10,8 @@ tramp
 .\#*
 my-customize.el
 ido.last
+# multiple-cursors extension auto-gen file
+.mc-lists.el
 
 # org-mode
 .org-id-locations
