@@ -1,5 +1,6 @@
 (source "gnu" "http://elpa.gnu.org/packages/")
-(source "melpa" "http://melpa.milkbox.net/packages/")
+(source "melpa" "http://melpa.org/packages/")
+(source "melpa-stable" "http://stable.melpa.org/packages/")
 (source "org" "http://orgmode.org/elpa/")
 
 (depends-on "ac-cider")
