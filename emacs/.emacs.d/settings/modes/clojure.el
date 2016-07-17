@@ -16,6 +16,10 @@
 
 (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
 
+;; Recognize Boot files as Clojure, including shebang scripts
+(add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
+(add-to-list 'magic-mode-alist '(".* boot" . clojure-mode))
+
 ;; auto-complete
 (require 'ac-cider)
 (add-hook 'cider-mode-hook 'ac-flyspell-workaround)
