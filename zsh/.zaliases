@@ -27,6 +27,7 @@ alias hh='history | less +G'
 alias epoch='date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s"'
 
 ### alternative versions for dvorak keyboard
+alias aoeu=asdf
 alias no=ls
 alias nn=ll
 
