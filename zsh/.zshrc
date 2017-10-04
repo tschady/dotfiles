@@ -87,14 +87,10 @@ export PGDATA="/usr/local/var/postgres"
 LOCAL_FILE=$HOME/.zshrc_local
 [[ -r $LOCAL_FILE ]] && source $LOCAL_FILE
 
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 PERL_MB_OPT="--install_base \"/Users/tschady/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/tschady/perl5"; export PERL_MM_OPT;
-export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 
-export NVM_DIR=~/.nvm
-
-source $(brew --prefix nvm)/nvm.sh
-eval "$(rbenv init - zsh --no-rehash)"
+# recommended by brew doctor
+export PATH="/usr/local/bin:$PATH"
+source /Users/tschady/.asdf/asdf.sh
