@@ -21,7 +21,7 @@
 (depends-on "ess-R-data-view")
 (depends-on "flycheck")
 (depends-on "flycheck-clojure")
-(depends-on "flyspell")
+(depends-on "flyspell-correct-helm")
 (depends-on "graphviz-dot-mode")
 (depends-on "helm")
 (depends-on "image+")
