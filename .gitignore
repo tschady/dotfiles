@@ -12,12 +12,12 @@ my-customize.el
 ido.last
 # multiple-cursors extension auto-gen file
 .mc-lists.el
-
 # org-mode
 .org-id-locations
 *_archive
 # packages
 emacs/.emacs.d/.cask
+emacs/.emacs.d/elpa
 
 # backups
 emacs/.emacs.d/backups
