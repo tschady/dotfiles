@@ -1,5 +1,5 @@
 ;;;; Emacs Customizations
-; @author: tschady <tschady@users.noreply.github.com>
+; @author: tschady
 ; @date: 6 Oct 2013
 ;
 ; I recently declared .emacs bankruptcy and started over after 15 yrs of cruft
@@ -17,6 +17,7 @@
 ;; load paths
 (setq my-settings-path (concat user-emacs-directory "settings/"))
 (add-to-list 'load-path my-settings-path)
+(add-to-list 'exec-path "/usr/local/bin")
 
 ;; package management
 (require 'cask "~/.cask/cask.el")
