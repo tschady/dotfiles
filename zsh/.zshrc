@@ -56,6 +56,10 @@ setopt PRINT_EXIT_VALUE
 fpath=($HOME/.zsh/func $fpath)
 typeset -U fpath
 
+# Completions
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
 ### time output
 export REPORTTIME=5
 export TIMEFMT="[ time: user: %U | system: %S | cpu: %P | total: %*Es ]"
