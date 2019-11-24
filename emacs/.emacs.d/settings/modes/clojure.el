@@ -14,6 +14,9 @@
     (yas-minor-mode 1) ; for adding require/use/import
     (cljr-add-keybindings-with-prefix "C-c C-m"))
 
+;; line up let bindings and maps nicely with whitespace
+(setq clojure-align-forms-automatically t)
+
 (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
 
 ;; Recognize Boot files as Clojure, including shebang scripts
