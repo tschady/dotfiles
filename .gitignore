@@ -15,6 +15,7 @@ ido.last
 # org-mode
 .org-id-locations
 *_archive
+org-journal.cache
 # packages
 emacs/.emacs.d/.cask
 emacs/.emacs.d/elpa
@@ -35,3 +36,4 @@ emacs/.emacs.d/saved-places
 ## don't save web browser utils
 emacs/.emacs.d/var/
 emacs/.emacs.d/url/
+emacs/.emacs.d/transient/
