@@ -23,6 +23,7 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 (require 'pallet)
+(pallet-mode t)
 
 ;; auto-byte-compile .el to .elc
 (require 'auto-compile)
