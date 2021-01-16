@@ -97,4 +97,4 @@ export PATH="$HOME/.bin:$PATH"
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
-source /Users/tschady/.asdf/asdf.sh
+

@@ -34,10 +34,11 @@ local return_code="%(?..%{$fg_bold[red]%} ☹ %?%{$reset_color%})"
 local prompt_char="%{$DEFAULT_COLOR%}%#%{$reset_color%}"
 local pwd="[%3~]"
 local time="%*"
-local ASDF="/Users/tschady/.asdf/bin/asdf"
-local ruby_version=$($ASDF current ruby | cut -f 1 -d " ")
-local node_version=$($ASDF current nodejs | cut -f 1 -d " ")
+# local ASDF="$HOME/.asdf/bin/asdf"
+# local ruby_version=$($ASDF current ruby | cut -f 1 -d " ")
+# local node_version=$($ASDF current nodejs | cut -f 1 -d " ")
 
 # prompts
 PROMPT='${marker} ${user}${host}$(git_prompt_info)${return_code} ${prompt_char} '
-RPS1='R(${ruby_version}) N(${node_version}) ${pwd} ${time}'
+# RPS1='R(${ruby_version}) N(${node_version}) ${pwd} ${time}'
+RPS1='${pwd} ${time}'
