@@ -28,6 +28,7 @@ emacs/.emacs.d/saved-places
 ### ZSH
 .zsh_history
 .zcompdump
+.zshrc.local
 
 # oh-my-zsh
 .zsh-update

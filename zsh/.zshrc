@@ -98,3 +98,5 @@ export PATH="$HOME/.bin:$PATH"
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
 
+# local, non git-stored options
+[[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
