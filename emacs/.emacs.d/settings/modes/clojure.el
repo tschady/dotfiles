@@ -32,3 +32,6 @@
   '(progn
      (add-to-list 'ac-modes 'cider-mode)
      (add-to-list 'ac-modes 'cider-repl-mode)))
+
+;; snippets
+(setq cljr-clojure-test-declaration "[clojure.test :refer :all]")
