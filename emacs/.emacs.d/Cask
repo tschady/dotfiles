@@ -2,7 +2,7 @@
 
 (source gnu)
 (source melpa)
-(source melpa-stable)
+(source "melpa-stable" "http://stable.melpa.org/packages/")
 (source org)
 
 (depends-on "ac-cider")
