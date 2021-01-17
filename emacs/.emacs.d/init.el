@@ -15,7 +15,7 @@
 
 ;;; initialization
 ;; load paths
-(setq my-settings-path (concat user-emacs-directory "settings/"))
+(defvar my-settings-path (concat user-emacs-directory "settings/"))
 (add-to-list 'load-path my-settings-path)
 (add-to-list 'exec-path "/usr/local/bin")
 
