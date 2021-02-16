@@ -17,3 +17,6 @@
 
 ;; Whitespace
 (setq-default show-trailing-whitespace t) ; allow highlighting of extra space
+
+;; remove delay on appearance in status line of keys pressed
+(setq echo-keystrokes 0.01)
