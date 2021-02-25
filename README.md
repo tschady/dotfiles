@@ -16,9 +16,7 @@ A side benefit is the ability to "deploy" dotfiles to a new machine on a tool-by
 	$ cd dotfiles
 	$ git submodule init
 	$ git submodule update
-	$ stow emacs
-	$ stow zsh
-	$ stow git
+	$ stow -t $HOME zsh emacs git
 
 Etc.
 
