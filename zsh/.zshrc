@@ -96,7 +96,7 @@ PERL_MM_OPT="INSTALL_BASE=/Users/tschady/perl5"; export PERL_MM_OPT;
 export PATH="$HOME/.bin:$PATH"
 
 # recommended by brew doctor
-export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH"
 
 # local, non git-stored options
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
