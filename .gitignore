@@ -38,3 +38,6 @@ emacs/.emacs.d/saved-places
 emacs/.emacs.d/var/
 emacs/.emacs.d/url/
 emacs/.emacs.d/transient/
+
+## emacs other
+emacs/.emacs.d/async-bytecomp.log
