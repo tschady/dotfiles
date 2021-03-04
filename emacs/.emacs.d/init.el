@@ -4,23 +4,19 @@
 ;
 ; I recently declared .emacs bankruptcy and started over after 15 yrs of cruft
 
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-; (package-initialize)  ;; <tws> no longer needed in Emacs27?
-
 (setq debug-on-error t)
 
 ;;; initialization
 ;; load paths
 (defvar my-settings-path (concat user-emacs-directory "settings/"))
+(defvar my-site-lisp "/opt/homebrew/share/emacs/site-lisp/")
+
 (add-to-list 'load-path my-settings-path)
+(add-to-list 'load-path (concat my-site-lisp "cask/"))
 (add-to-list 'exec-path "/usr/local/bin")
 
 ;; package management
-(require 'cask "~/.cask/cask.el")
+(require 'cask "cask.el")
 (cask-initialize)
 (require 'pallet)
 (pallet-mode t)
