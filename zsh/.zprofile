@@ -1,5 +1,5 @@
 # -*- shell-script -*-
 
-path=(~/.rbenv/shims /usr/local/sbin ~/bin ~/Library/Python/2.7/bin ~/.cask/bin $path)
+path=(/usr/local/sbin ~/bin $path)
 
-ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_ed25519
