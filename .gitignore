@@ -24,6 +24,8 @@ emacs/.emacs.d/elpa
 emacs/.emacs.d/backups
 # savepoints
 emacs/.emacs.d/saved-places
+# random
+emacs/.emacs.d/projectile*
 
 ### ZSH
 .zsh_history
