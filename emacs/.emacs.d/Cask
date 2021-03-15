@@ -45,3 +45,13 @@
 (depends-on "clojure-mode")
 (depends-on "clojure-snippets")
 (depends-on "flycheck-clojure")
+
+;; elixir
+(depends-on "alchemist")
+(depends-on "ac-alchemist")
+(depends-on "elixir-yasnippets")
+(depends-on "flycheck-credo")
+(depends-on "flycheck-dialyxir")
+(depends-on "flycheck-elixir")
+(depends-on "inf-elixir")
+(depends-on "mix")
