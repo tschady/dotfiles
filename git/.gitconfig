@@ -1,6 +1,10 @@
 [user]
 	name = tschady
 	email = tschady@users.noreply.github.com
+
+[init]
+	defaultBranch = main
+
 [core]
 	editor = emacs -Q
 	excludesfile = ~/.gitignore
