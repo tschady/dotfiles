@@ -12,7 +12,8 @@
 (defvar my-site-lisp "/opt/homebrew/share/emacs/site-lisp/")
 
 (add-to-list 'load-path my-settings-path)
-(add-to-list 'load-path (concat my-site-lisp "cask/"))
+(add-to-list 'load-path "/opt/homebrew/share/emacs/site-lisp/cask/")
+(add-to-list 'load-path "/usr/local/share/emacs/site-lisp/cask/")
 (add-to-list 'exec-path "/usr/local/bin")
 
 ;; package management
