@@ -83,4 +83,5 @@
 (depends-on "websocket" "1.8")
 (depends-on "with-editor" "20210524")
 (depends-on "yaml-mode")
+(depends-on "yard-mode")
 (depends-on "yasnippet")

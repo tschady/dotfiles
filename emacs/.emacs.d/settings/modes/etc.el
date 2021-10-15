@@ -16,10 +16,6 @@
 (eval-after-load 'image+ '(imagex-global-sticky-mode 1))
 (eval-after-load 'image+ '(imagex-auto-adjust-mode 1))
 
-;; Flycheck
-(add-hook 'after-init-hook #'global-flycheck-mode)
-
 ;; Web stuff
 (add-hook 'css-mode-hook 'rainbow-mode)
 (add-hook 'scss-mode-hook 'rainbow-mode)
-(add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))

@@ -1,7 +1,5 @@
 ;; Rails
-(setq rinari-tags-file-name "TAGS")
-(add-hook 'ruby-mode-hook 'rinari-minor-mode)
-(add-hook 'web-mode-hook 'rinari-minor-mode)
+(add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
 
 ;; Cofeescript
 (custom-set-variables '(coffee-tab-width 2))
