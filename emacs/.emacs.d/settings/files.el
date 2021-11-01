@@ -19,10 +19,6 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
 
-;; Navigation
-(projectile-mode +1)
-(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-
 ;; Other
 (global-auto-revert-mode 1) 		; reload files from disk when changed
 (setq apropos-do-all t)			; apropos everything
