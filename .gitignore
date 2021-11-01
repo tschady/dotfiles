@@ -27,6 +27,9 @@ emacs/.emacs.d/saved-places
 # random
 emacs/.emacs.d/projectile*
 
+# magit-forge database
+emacs/.emacs.d/forge-database.sqlite
+
 ### ZSH
 .zsh_history
 .zcompdump

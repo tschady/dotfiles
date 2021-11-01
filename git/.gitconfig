@@ -2,6 +2,12 @@
 	name = tschady
 	email = tschady@users.noreply.github.com
 
+[github]
+	user = tschady
+
+[gitlab]
+	user = tschady
+
 [init]
 	defaultBranch = main
 
