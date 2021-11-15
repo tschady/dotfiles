@@ -103,6 +103,7 @@ source $HOME/.zaliases
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 export LESS="-R-i-P?f%f:STDIN (%i/%m) Line %lt/%L"
 export PGDATA="/usr/local/var/postgres"
+export SLACK_DEVELOPER_MENU=true
 
 # include local env vars, such as passwords, which we do not want in SCCS
 LOCAL_FILE=$HOME/.zshrc_local
