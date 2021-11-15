@@ -116,5 +116,9 @@ export PATH="$HOME/.bin:$PATH"
 # recommended by brew doctor
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH"
 
+# Java / GraalVM
+export PATH="/Library/Java/JavaVirtualMachines/graalvm-ce-java17-21.3.0/Contents/Home/bin:$PATH"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/graalvm-ce-java17-21.3.0/Contents/Home"
+
 # local, non git-stored options
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
