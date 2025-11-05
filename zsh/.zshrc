@@ -42,7 +42,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx ruby)
+plugins=(git macos gcloud gh)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -74,8 +74,8 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 
 # Completions
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+source '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc'
+source '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'
 
 ### time output
 export REPORTTIME=5
@@ -119,6 +119,9 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH"
 # Java / GraalVM
 export PATH="/Library/Java/JavaVirtualMachines/graalvm-ce-java17-21.3.0/Contents/Home/bin:$PATH"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/graalvm-ce-java17-21.3.0/Contents/Home"
+
+# PATH
+export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
 
 # local, non git-stored options
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
