@@ -1,0 +1,100 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = 'tokyo-night'
+
+format = """
+$username\
+$hostname\
+[](bg:heavenly-blue fg:isabelle)\
+$directory\
+[](fg:heavenly-blue bg:antique-royal-blue)\
+$git_branch\
+$git_status\
+[](fg:antique-royal-blue bg:cosmos)\
+[](fg:cosmos)\
+$line_break\
+$character"""
+
+right_format = """
+[](fg:cosmos)\
+$cmd_duration\
+[](fg:dark-gunmetal-grey bg:cosmos)\
+$time\
+"""
+
+[username]
+disabled = false
+show_always = false
+style_user = "bg:isabelle fg:space-black"
+style_root = "bg:red fg:white"
+format = '[ $user @]($style)'
+
+[hostname]
+disabled = false
+ssh_only = true
+style = "bg:isabelle fg:space-black"
+format = '[ $hostname]($style)'
+
+[directory]
+style = "fg:sterling-silver bg:heavenly-blue"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = true
+
+[directory.substitutions]
+#"Documents" = "󰈙 "
+#"Downloads" = " "
+#"Music" = " "
+#"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:antique-royal-blue"
+format = '[[ $symbol $branch ](fg:heavenly-blue bg:antique-royal-blue)]($style)'
+
+[git_status]
+style = "bg:antique-royal-blue"
+format = '[[($all_status$ahead_behind )](fg:heavenly-blue bg:antique-royal-blue)]($style)'
+
+[line_break]
+disabled = true
+
+[character]
+disabled = false
+success_symbol = '[❯](bold fg:med-spring-green)'
+error_symbol = '[x](bold fg:hot-cherry-red)'
+
+[cmd_duration]
+disabled = false
+min_time = 2_000
+show_milliseconds = false
+format = "[[ in $duration ](fg:heavenly-blue bg:cosmos)](bg:cosmos)"
+show_notifications = true
+min_time_to_notify = 45_000
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:cosmos"
+format = '[[ $time ](fg:rock-blue bg:dark-gunmetal-grey)]($style)'
+
+[palettes.tokyo-night]
+isabelle = "#a3aed2"
+heavenly-blue = "#769ff0"
+antique-royal-blue = "#394260"
+cosmos = "#212736"
+dark-gunmetal-grey = "#1d2230"
+rock-blue = "#a0a9cb"
+space-black = "#090c0c"
+sterling-silver = "#e3e5e5"
+
+# red/green pairings
+munsell-green = "#009E73"
+red-stage = "#D55E00"
+
+med-spring-green = "#05E28B"
+hot-cherry-red = "#FF3366"
+
+spring-bud = "#A1FF00"
+blood-red = "#5F0000"
