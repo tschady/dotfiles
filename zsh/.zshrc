@@ -17,6 +17,9 @@ alias ll='ls -lh'
 alias ls='ls -G'
 alias lsa='ls -lah'
 
+# Initialize completion
+autoload -U compinit; compinit
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
